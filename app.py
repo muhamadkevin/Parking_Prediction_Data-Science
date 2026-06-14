@@ -601,7 +601,7 @@ if page == "EDA":
             # Box OccupancyRate per label
             order = [l for l in ['Sepi','Sedang','Padat'] if l in df['LabelKepadatan'].unique()]
             data_box = [df[df['LabelKepadatan']==l]['OccupancyRate'].values for l in order]
-            bp = axes[1].boxplot(data_box, labels=order, patch_artist=True,
+            bp = axes[1].boxplot(data_box, tick_labels=order, patch_artist=True,
                                 medianprops=dict(color='#1e293b', linewidth=2))
             for patch, lbl in zip(bp['boxes'], order):
                 patch.set_facecolor(colors_lbl.get(lbl,'#94a3b8'))
