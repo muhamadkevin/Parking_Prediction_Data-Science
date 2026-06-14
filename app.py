@@ -199,7 +199,7 @@ st.markdown("""
     }
 
     /* Hide streamlit default elements */
-    #MainMenu, footer, header { visibility: hidden; }
+    #MainMenu, footer { visibility: hidden; }
     .stDeployButton { display: none; }
 </style>
 """, unsafe_allow_html=True)
