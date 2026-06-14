@@ -1,0 +1,57 @@
+{
+  "best_model": "XGBoost",
+  "K_optimal": 3,
+  "q33_threshold": 0.3769747224464854,
+  "q66_threshold": 0.6565915712626516,
+  "label_classes": [
+    "Padat",
+    "Sedang",
+    "Sepi"
+  ],
+  "num_cols": [
+    "Latitude",
+    "Longitude",
+    "Capacity",
+    "QueueLength",
+    "hour",
+    "dayofweek",
+    "month",
+    "is_weekend",
+    "hour_sin",
+    "hour_cos",
+    "is_rush_hour",
+    "queue_pressure",
+    "rush_x_weekend",
+    "hour_dow_interaction",
+    "log_capacity",
+    "log_queue_length",
+    "occ_lag_1h",
+    "occ_lag_2h",
+    "occ_lag_3h",
+    "queue_lag_1h",
+    "queue_lag_2h",
+    "occ_roll_mean_3h",
+    "occ_roll_std_3h",
+    "occ_roll_mean_6h",
+    "occ_roll_std_6h"
+  ],
+  "cat_cols": [
+    "VehicleType",
+    "TrafficConditionNearby",
+    "IsSpecialDay",
+    "capacity_category",
+    "time_of_day"
+  ],
+  "vehicle_types": [
+    "car",
+    "bike",
+    "truck",
+    "cycle"
+  ],
+  "traffic_conds": [
+    "low",
+    "high",
+    "average"
+  ],
+  "accuracy_test": 0.954
+}
